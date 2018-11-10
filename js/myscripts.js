@@ -1,9 +1,10 @@
 var canvas = document.querySelector("#canvas");
 var stopDraw = true;
-var penColor = "";
+var penColor = "black";
 var penWidth = "2";
 var penHight = "2";
 var moshe = 0;
+var line = 2;
 var userDraw = function (event) {
 
     if (stopDraw) {
@@ -14,12 +15,18 @@ var userDraw = function (event) {
     var userStopDraw = function () {
         stopDraw = false;
     }
-    if (penColor !== "white") {
-        penWidth = "2";
-        penHight = "2";
-    }else{
+
+    if (line === 1) {
         penWidth = "10";
         penHight = "10";
+    }
+    else if (line === 0) {
+        penWidth = "1000";
+        penHight = "2";
+    }
+    else {
+        penWidth = "2";
+        penHight = "2";
     }
 
     window.addEventListener("mouseup", userStopDraw);
@@ -36,27 +43,40 @@ var userDraw = function (event) {
 
 
     document.getElementById("white").addEventListener("click", function (e) {
-        penColor = "white";
-        penWidth = "50";
-        penHight = "50";
+        line = 1;
+
+    });
+    document.getElementById("line").addEventListener("click", function (e) {
+        line = 0;
     });
     document.getElementById("red").addEventListener("click", function (e) {
         penColor = "red";
+        line = 2;
     });
     document.getElementById("blue").addEventListener("click", function (e) {
         penColor = "blue";
+        line = 2;
+
     });
     document.getElementById("yellow").addEventListener("click", function (e) {
         penColor = "yellow";
+        line = 2;
+
     });
     document.getElementById("green").addEventListener("click", function (e) {
         penColor = "green";
+        line = 2;
+
     });
     document.getElementById("black").addEventListener("click", function (e) {
         penColor = "black";
+        line = 2;
+
     });
     document.getElementById("purple").addEventListener("click", function (e) {
         penColor = "purple";
+        line = 2;
+
     });
 }
 
