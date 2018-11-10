@@ -1,0 +1,68 @@
+.table {
+    height:550px;
+    width:1300px;
+    border: 5px solid black;
+    position:relative;
+    display: flex; 
+}
+.tools {
+    height:550px; 
+    width: 100px;
+    
+}
+
+#canvas {
+    height:550px;
+    width:1300px;    
+}
+.features {
+    height:195px;
+    width: 100px;
+    border: 1px solid rgb(0, 0, 0); 
+    position:absolute;
+    bottom:0px; 
+    border-right: 5px solid rgb(0, 0, 0);
+    border-top: 5px solid black;
+}
+.pallet {
+    height:350px;
+    width:100px;
+    border: 1px solid black;
+    border-right: 5px solid black;
+    list-style: none;
+    background-image: url('../images/pencils.jpg'); 
+    background-size: cover;
+    background-position: center;
+
+}
+
+.button1 {
+    border: 1px solid black;
+    padding: 17px;
+        font-size: 16px;
+        margin: 8px 6px;
+        cursor: pointer;
+        border-radius: 50%;
+}
+
+
+
+.button2 {
+    width: -webkit-fill-available;
+    height: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+pre {color: black}
+img {
+    height: 84px;
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid black;
+    top: 20px;
+    cursor: pointer;
+
+}
