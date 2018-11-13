@@ -19,6 +19,7 @@ var userDraw = function (event) {
     if (line === 1) {
         penWidth = "10";
         penHight = "10";
+        penColor = "white";
     }
     else if (line === 0) {
         penWidth = "1000";
